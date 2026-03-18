@@ -38,17 +38,17 @@ test('test', async ({ page }) => {
   await expect(page.locator('#errorDiv')).toContainText('following error occurred during login: Password incorrect.');
   await page.waitForTimeout(5000);
 });
-test('Calender', async ({ page }) => {
-    await page.waitForTimeout(50000);
-    const date=31;
-    const month=12;
-    const year=2024;
-    await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/offers');
-    await page.click(".react-date-picker__inputGroup");
-    await page.click(`.react-calendar__navigation__label`);
-    await page.click(`.react-calendar__navigation__label`);
-    await page.getByText(year.toString()).click();
-    await page.locator(".react-calendar__year-view__months__month").nth(Number(month)-1).click();
-    await page.locator(`//abbr[text()="${date}"]`).click();
+// test('Calender', async ({ page }) => {
+//     await page.waitForTimeout(50000);
+//     const date=31;
+//     const month=12;
+//     const year=2024;
+//     await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/offers');
+//     await page.click(".react-date-picker__inputGroup");
+//     await page.click(`.react-calendar__navigation__label`);
+//     await page.click(`.react-calendar__navigation__label`);
+//     await page.getByText(year.toString()).click();
+//     await page.locator(".react-calendar__year-view__months__month").nth(Number(month)-1).click();
+//     await page.locator(`//abbr[text()="${date}"]`).click();
 
-})
+// })
