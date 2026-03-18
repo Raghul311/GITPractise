@@ -39,6 +39,7 @@ test('test', async ({ page }) => {
   await page.waitForTimeout(5000);
 });
 test.only('Calender', async ({ page }) => {
+    await page.waitForTimeout(50000);
     const date=31;
     const month=12;
     const year=2024;
