@@ -38,7 +38,7 @@ test('test', async ({ page }) => {
   await expect(page.locator('#errorDiv')).toContainText('following error occurred during login: Password incorrect.');
   await page.waitForTimeout(5000);
 });
-test.only('Calender', async ({ page }) => {
+test('Calender', async ({ page }) => {
     await page.waitForTimeout(50000);
     const date=31;
     const month=12;
