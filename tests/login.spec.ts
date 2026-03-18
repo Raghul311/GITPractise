@@ -20,7 +20,7 @@ for (const [index, data] of records.entries()) {
       await page.goto("http://leaftaps.com/opentaps/control/main");
 
       await page.fill("#username", data.username);
-      const pss= await page.fill("#password", `ssssr`);
+      const pss= await page.fill("#password", `kumar`);
       await expect(page).toHaveScreenshot();
 
       await page.click(".decorativeSubmit");
